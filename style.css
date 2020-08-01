@@ -1,0 +1,161 @@
+body{
+
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #333;
+}
+
+@keyframes example {
+  from {}
+  to {
+  	box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 50px red;
+
+  }
+}
+
+#container{
+
+	margin-top: 90px;
+	box-shadow: 0 0 10px;
+	padding:50px;
+	animation-name:example;
+	animation-duration: 3s; 
+	 animation-iteration-count: infinite;
+	 animation-delay: 3s;
+	 animation-direction: alternate;	
+	 transition: 5s;
+}
+
+}
+
+.Answerr{
+	font-family: Impact;
+	font-size: 50px;	
+	transition:4s;
+
+}
+
+.Main{
+	font-size:30px;
+	font-family: lucida console;}
+
+span{display: inline;
+margin:0;
+padding:0;
+transition: 2s;
+
+  animation: glow 5s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.In{
+	margin-left:20px;
+	border-bottom: 3px solid black;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	height:30px;
+	width: 300px;
+	background-color:#333;
+	text-align: center;
+}
+
+.btn{
+	width: 200px;
+	height:50px;
+	border-radius: 10px;
+	
+	font-family:arial;
+	border:none;
+	background-color: black;
+	color:white;	
+
+}
+.btn:hover{
+	cursor: pointer;
+	box-shadow:0 0 10px skyblue,0 0 10px skyblue,0 0 10px skyblue,0 0 10px skyblue;
+	background-color: white;
+	transition:1s;
+	color:red;}
+
+
+/* modal */
+.bg-modal{
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity: 0.7;
+	position: absolute;
+	top:0;
+	left:0;
+	display:none;
+	transition: 5s;
+	transition-delay: 10s;
+
+}
+.modal-content{
+	position: fixed;
+	top:23%;
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	
+	align-content: center;
+	left: 32%;
+	animation: ex;
+	animation-duration: 1s;
+
+
+}
+
+@keyframes ex {
+	from{width: 0px;
+		height: 0px;}
+	to{width: 500px;
+	height: 300px;}
+
+}
+
+@keyframes ez {
+	from{width: 0px;
+		height: 0px;}
+	to{	width: 150px;
+	height: 50px;}
+
+}
+#modal-button{
+	position: absolute;
+	top:83%;
+	left: 35%;
+	right: 50%;
+	width: 150px;
+	height: 50px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 4px solid black;
+	font-family: calibri;
+	background-color:white;
+	color:black; 
+	cursor: pointer;
+	animation: ez;
+	animation-duration: 1s;
+}
+#modal-text{
+
+	font-family: Brush Script Std;
+	font-size: 30px;
+	margin-top: 50px;
+}
